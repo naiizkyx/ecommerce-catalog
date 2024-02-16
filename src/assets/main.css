@@ -1,0 +1,156 @@
+
+.app {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  main {
+    top: 0;
+    padding: 0px;
+    margin: auto;
+  }
+  p.harga{
+    font-size: 18px;
+  }
+  .outer-wrapper {
+    padding: 0 auto;
+  }
+  .product-container {
+    background-color: #ffffff;
+    width: 100%;
+    padding: 0;
+    z-index: -1;
+    position: fixed;
+  }
+  
+  .product {
+    width: 70%;
+    margin: 0 auto;
+    margin-top:200px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 0 2px #dcdcdc;
+  }
+  
+  .product-image {
+    width: 30%;
+    margin-right: 20px;
+  }
+  
+  .product-details {
+    width: 70%;
+  }
+  .unavailable-wrapper {
+    height: 350px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background-color: #dcdcdc; 
+    display: flex;
+    justify-content: center;
+  }
+  .unavailable-product {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 200px;
+    width: 70%;
+    height: 120%;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 99;
+    box-shadow: 0 0 0 2px #dcdcdc;
+  }
+  
+  .unavailable-image {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  
+  .men-section {
+    background-color: #D6E6FF;
+    color: #000000;
+  }
+  
+  .women-section {
+    background-color: #FDE2FF;
+    color: #000000;
+  }
+  
+  button {
+    font-size: medium;
+    padding: 8px;
+    border: solid 2px;
+  }
+  
+  button:hover {
+    background-color: #dcdcdc;
+  }
+  
+  button.next {
+    margin-right: 20px;
+    background-color: transparent;
+    color: #1e1e1e;
+    border-color: #1e1e1e;
+  }
+  
+  .women-section button.next {
+    color: white;
+    background-color: #720060;
+    border-color: #720060;
+  }
+  
+  .women-section button.next:hover {
+    color: white;
+    background-color: #852977;
+    border-color: #720060;
+  }
+  
+  .women-section button.buy-button {
+    color: #720060;
+    border-color: #720060;
+  }
+  
+  main.men-section {
+    background-color: #720060;
+  }
+  
+  .men-section button.next {
+    color: white;
+    background-color: #002772;
+    border-color: #002772;
+  }
+  
+  .men-section button.next:hover {
+    color: white;
+    background-color: #244f9e;
+    border-color: #002772;
+  }
+  
+  .men-section button.buy-button {
+    color: #002772;
+    border-color: #002772;
+  }
+  
+  .loader {
+    margin: auto;
+    margin-top: 400px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
